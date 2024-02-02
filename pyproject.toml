@@ -1,11 +1,19 @@
-[tool]
 [tool.poetry]
-authors = ["Your Name <you@example.com>"]
-name = "root"
-version = "0.0.0"
+name = "repl-nix-boilerplate-medical-data-visualizer"
+version = "0.1.0"
 description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "repl_nix_boilerplate_medical_data_visualizer"}]
 
 [tool.poetry.dependencies]
-pandas = "*"
-python = "^3.7"
-seaborn = "*"
+python = "^3.10"
+numpy = "^1.26.3"
+pandas = "^2.2.0"
+seaborn = "^0.13.2"
+matplotlib = "^3.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
